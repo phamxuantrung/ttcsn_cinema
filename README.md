@@ -1,5 +1,6 @@
 # Dự án xây dựng giao diên website bằng Tailwind Css
-====================================================
+
+
 ## Khởi chạy
 Bắt buộc [Node.js](https://nodejs.org/) v10+ để chạy.
 #### Chạy câu lệnh
