@@ -1,7 +1,7 @@
 # Dự án xây dựng giao diên website bằng Tailwind Css
 
 
-## Khởi chạy
+## Khởi tạo
 Bắt buộc [Node.js](https://nodejs.org/) v10+ để chạy.
 - Kết nối my computer với github
 ```sh
@@ -17,7 +17,7 @@ git pull origin main
 ```sh
 npm install -D tailwindcss
 ```
-- Cuối cùng, chạy câu lệnh
+## Chạy dự án với Tailwind Css
 ```sh
 npx tailwindcss -i input.css -o ./src/css/tailwind.css --watch
 ```
