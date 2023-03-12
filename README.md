@@ -3,27 +3,27 @@
 
 ## Khởi chạy
 Bắt buộc [Node.js](https://nodejs.org/) v10+ để chạy.
-```sh
-npm install -D tailwindcss
-```
-Chạy câu lệnh
-```sh
-npx tailwindcss -i input.css -o ./src/css/tailwind.css --watch
-```
-
 ### Kết nối my computer với github
 ```sh
 cd my_folder
 git init
 git remote add origin https://github.com/phamxuantrung/ttcsn_cinema.git
 ```
+### Cài đặt Tailwind Css
+```sh
+npm install -D tailwindcss
+```
+### Cuối cùng, chạy câu lệnh
+```sh
+npx tailwindcss -i input.css -o ./src/css/tailwind.css --watch
+```
 
-### Kéo code trên github về my computer
+## Kéo code trên github về my computer
 ```sh
 git pull origin main
 ```
 
-### Làm việc nhóm với git
+## Làm việc nhóm với git
 Sau khi kéo code về máy
 - Tạo branch mới
 ```sh
