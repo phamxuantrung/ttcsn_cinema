@@ -3,9 +3,11 @@
 
 ## Khởi chạy
 Bắt buộc [Node.js](https://nodejs.org/) v10+ để chạy.
-#### Chạy câu lệnh
 ```sh
 npm install -D tailwindcss
+```
+Chạy câu lệnh
+```sh
 npx tailwindcss -i input.css -o ./src/css/tailwind.css --watch
 ```
 
