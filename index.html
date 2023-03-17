@@ -1,15 +1,105 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="./src/css/tailwind.css">
-  <link rel="stylesheet" href="./src/css/initail.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./src/assets/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./src/css/tailwind.css" />
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+
+<body class="bg-[#2b262a]">
+  <main class="mx-auto h-screen">
+    <div id="sidebar"
+      class="fixed t-0 l-0 flex flex-col justify-between w-56 h-screen py-8 px-4 border-solid border-neutral-700 border-r-2">
+      <div>
+        <!-- sidebar logo -->
+        <div class="flex items-center mb-7">
+          <img src="./src/assets/logo.png" class="w-9" />
+          <p class="text-xl uppercase font-medium pl-2 text-white" style="font-family: 'Shantell Sans', cursive">
+            Cinematic
+          </p>
+        </div>
+        <!-- sidebar user account -->
+        <div class="p-3 rounded-2xl bg-gradient-to-r from-blue-500 to-blue-600">
+          <div class="flex items-center pb-3 border-blue-500 border-b">
+            <img class="w-11 h-11 rounded-full mr-2"
+              src="https://mgvinhhai.edu.vn/wp-content/uploads/1677558740_555_Top-Hot-101-Hinh-Anh-Anime-Buon-Va-Lanh-Lung.jpg" />
+            <div>
+              <p class="text-md text-blue-200 font-medium">
+                Username
+              </p>
+              <p class="text-xs text-blue-300">
+                +98 912 067 1263
+              </p>
+            </div>
+          </div>
+          <div class="flex justify-between mt-4">
+            <div class="flex items-center">
+              <div class="w-7 h-7 rounded-full bg-blue-700/50 flex items-center justify-center">
+                <i class="fa-solid fa-wallet text-blue-100 text-sm"></i>
+              </div>
+              <div class="ml-2">
+                <p class="text-xs text-blue-300">Balance</p>
+                <p class="text-sm text-blue-100 font-semibold">
+                  $38,00
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-center w-7 bg-blue-100 rounded-full text-xl text-slate-600 cursor-pointer">
+              +
+            </div>
+          </div>
+        </div>
+        <!-- sidebar navigation -->
+        <ul class="text-gray-400 mt-6">
+          <li
+            class="nav-item active">
+            <i class="fa-solid fa-house flex items-center"></i>
+            <p class="ml-3">Home</p>
+          </li>
+          <li class="nav-item">
+            <i class="fa-solid fa-heart flex items-center"></i>
+            <p class="ml-3">Favorite</p>
+          </li>
+          <li class="nav-item">
+            <i class="fa-solid fa-ticket flex items-center"></i>
+            <p class="ml-3">Bonuses</p>
+          </li>
+          <li
+            class="nav-item flex justify-between">
+            <div class="flex">
+              <i class="fa-solid fa-bag-shopping flex items-center"></i>
+              <p class="ml-3">Purchases</p>
+            </div>
+            <div class="px-3 py-0.5 bg-gradient-to-r from-blue-500 to-blue-600 text-white text-xs rounded-lg">
+              2
+            </div>
+          </li>
+          <li class="nav-item">
+            <i class="fa-solid fa-clock flex items-center"></i>
+            <p class="ml-3">Reminder</p>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="px-4 py-2 mb-1 cursor-pointer flex items-center rounded-lg text-gray-400">
+          <i class="fa-sharp fa-solid fa-gear flex items-center"></i>
+          <p class="ml-3">Settings</p>
+        </div>
+        <div class="px-4 py-2 mb-1 cursor-pointer flex items-center rounded-lg text-red-500">
+          <i class="fa-solid fa-right-from-bracket flex items-center"></i>
+          <p class="ml-3">Log out</p>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
+<script src="./src/js/dom.js"></script>
+
 </html>

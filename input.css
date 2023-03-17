@@ -1,3 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@500&family=Stick+No+Bills:wght@500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    html{
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
+
+@layer components{
+    .nav-item{
+        @apply px-4 py-2 mb-1 cursor-pointer flex items-center rounded-lg border-l-4 hover:bg-blue-700/[.05] border-transparent;
+    }
+
+    .nav-item.active{
+        @apply  bg-blue-700/[.15] border-blue-500;
+    }
+
+    .nav-item.active i{
+        @apply text-blue-500;
+    }
+
+    .nav-item.active p{
+        @apply text-white;
+    }
+}
